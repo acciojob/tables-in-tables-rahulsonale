@@ -22,22 +22,8 @@
 
 <table>
     <tr>
-        <!-- Nested Table 1 -->
-        <td>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Nested Table 1</th>
-                    </tr>
-                </thead>
-	                <tbody>
-                    <tr><td>Some data</td></tr>
-                    <tr><td>Some more data</td></tr>
-                </tbody>
-            </table>
-        </td>
 
-        <!-- Nested Table 2 -->
+        <!-- ✅ Nested Table 2 MUST COME FIRST -->
         <td>
             <table>
                 <thead>
@@ -61,16 +47,30 @@
                 </tbody>
             </table>
         </td>
-    </tr>
 
-    <tr>
-        <!-- Nested Table 3 (with list) -->
+        <!-- ✅ Nested Table 1 NOW SECOND -->
         <td>
             <table>
                 <thead>
                     <tr>
-                        <th>Nested Table 3</th>
+                        <th>Nested Table 1</th>
                     </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Some data</td></tr>
+                    <tr><td>Some more data</td></tr>
+                </tbody>
+            </table>
+        </td>
+
+    </tr>
+
+    <tr>
+        <!-- Nested Table 3 -->
+        <td>
+            <table>
+                <thead>
+                    <tr><th>Nested Table 3</th></tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -86,18 +86,14 @@
             </table>
         </td>
 
-        <!-- Nested Table 4 (Black box HTML text) -->
+        <!-- Nested Table 4 with HTML box -->
         <td>
             <table>
                 <thead>
-                    <tr>
-                        <th>Nested Table 4</th>
-                    </tr>
+                    <tr><th>Nested Table 4</th></tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td class="black-box">HTML</td>
-                    </tr>
+                    <tr><td class="black-box">HTML</td></tr>
                 </tbody>
             </table>
         </td>
